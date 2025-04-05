@@ -1,0 +1,361 @@
+/*====================================================================================================================*/
+                                                /* Global Styling */
+/*====================================================================================================================*/
+/*TODO-clean up global naming conventions*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+    .main-container {
+        width:100% !important
+    }
+
+.slider{
+    height: 100% !important;
+}
+.slider ul{
+    height:700px !important;
+}
+/* IMP PADDING ADJUST THE CLOSES OF ALL ROWS TODO-check this out-what the heck is it there for?????*/
+.container .row {
+    margin: 0;
+}
+
+
+/* SITE PRIMARY COLOR TODO-get rid of this ridiculous naming convention */
+.aa_blue {
+    color:black;
+}
+
+#offers-general {
+    margin-top:90px;
+    margin-bottom: 45px;
+}
+
+#offers-today {
+    margin-top:45px;
+}
+
+/*!*SITE LINK TEXT COLOR*!*/
+a {
+    color: #0078d2;
+    font-weight:bolder;
+}
+
+
+/*!* UNDERLINE WHEN HOVER OVER LINK TEXT AND MAKE IT BLACK *!*/
+a:hover {
+    color: #0078d2;
+    text-decoration: underline;
+}
+
+/* general icon styling */
+.input-field .prefix {
+    font-size:23px;
+}
+
+/* small icon styling */
+.small-icon {
+    font-size: 15px;
+}
+
+/* general button styling */
+.btn {
+    background-color: #0078d2;
+    /*width:175px;*/
+    color: #fff;
+    font-size:12px;
+    font-weight:200;
+    line-height:35px;
+}
+
+.btn:hover {
+    background-color: #003a6d;
+    color: white;
+}
+/*====================================================================================================================*/
+/* DIV POSITIONING ON PAGE */
+/*====================================================================================================================*/
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    width:100%;
+    top:93%;
+}
+
+#offers-general a{
+    font-size: 12px !important;
+}
+@media screen and (min-width: 480px) {
+    .input-feilds{
+        width: 100% !important;
+        margin-top: -320px;
+        z-index: 77;
+    }
+    .search-container{
+        width: 66.666%;
+        position: absolute;
+        z-index: 77;
+    }
+    .absolute {
+        position: relative;
+        /* width:95%; */
+        margin:auto;
+        /* top:80%;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 2; */
+    }
+}
+
+/*====================================================================================================================*/
+                                                /* Navbar up top */
+/*====================================================================================================================*/
+
+
+
+/* navbar search icon TODO-sort out this search bar - I do not like how its aligned and need a more semantic name*/
+nav .input-field label i {
+    color:#0078d2;
+}
+
+/* navbar link */
+nav ul a {
+    font-size: large;
+}
+
+/* mobile navbar link */
+.side-nav a {
+    /*color:#0078d2;*/
+    color:#fff;
+}
+
+.side-nav {
+    background-color: rgba(33,150,243,.96);
+}
+.slider .slides{
+    background-color: transparent !important;
+}
+
+
+/* sub-text inside of carousel */
+.caro-sub-text {
+    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+}
+
+/* carousel controls*/
+.slider .indicators .indicator-item, .slider .indicators .indicator-item.active {
+    display: none;
+}
+
+/*====================================================================================================================*/
+                                                /* Left Form*/
+/*====================================================================================================================*/
+
+/* container around the left form  */
+.left-form-container {
+    background: rgb(125,185,232); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(125,185,232,1) 0%, rgba(32,124,202,1) 0%, rgba(41,137,216,1) 2%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+form {
+    padding:10px 10px 30px 10px;
+}
+
+/*  remember me check box */
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    border-color: black;
+}
+
+/*  remember me text */
+.input-field.col label {
+    font-size: 11px;
+}
+
+/*text-inside the form*/
+.input-field .prefix ~ input {
+    padding-left:5px;
+    height:30px;
+    font-size:11px;
+}
+
+#user_first_name,#user_last_name,#password {
+    border:0;
+}
+
+/*====================================================================================================================*/
+                                            /* Right Form */
+/*====================================================================================================================*/
+
+/* container around the right form top-nav  */
+.right-form-topnav-container, #main-menu  {
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 82%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 82%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+/* right form top-nav link */
+.right-form-topnav {
+    text-transform: none;
+    color: #0078d2 !important;
+}
+
+/* after link is clicked change color */
+#main-menu ul li.selected {
+    background-color: #0078d2;
+    color:#FFFFFF;
+}
+
+/* all right form links on hover */
+#main-menu a:hover {
+    background-color: #0078d2;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+/* bottom nav */
+.tabs .indicator {
+    background-color: transparent;
+
+}
+
+/* input boxes */
+.input-field .prefix ~ input {
+    border:1px solid;
+}
+.input-field.col .prefix ~ label, .input-field.col .prefix ~ .validate ~ label {
+    /*margin-left:60px;*/
+    padding-left:5px;
+    margin-right:5px;
+}
+
+.select-wrapper input.select-dropdown {
+    border:1px solid;
+    padding-left:5px;
+    font-size:10px;
+    height:30px;
+}
+
+.tabs .tab a, .tabs .tab a.active {
+    font-size:11px;
+}
+
+/* right form header media */
+@media screen and (min-width: 480px) {
+    .tabs .tab a, .tabs .tab a.active {
+        font-size:16px;
+    }
+    .slider .slides li img{
+        width: 90% !important;
+        height: 90% !important;
+        margin-left: 5% !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+    }
+    
+}
+
+
+/*====================================================================================================================*/
+                                                /* Footer */
+/*====================================================================================================================*/
+
+/* footer background color */
+footer.page-footer, footer.page-footer .footer-copyright {
+    /*background-color: #cccccc;*/
+    font-size:12px;
+}
+
+/* footer icons */
+.footer_icon {
+    font-size:30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#0078d2;
+}
+
+/* container around all the elements in the footer */
+#page-footer-container {
+    margin-top:90px;
+    padding-bottom:10px;
+    background-color: rgb(208, 218, 224);
+}
+
+
+
+
+
+
+
+
+/*TODO- style date picker and whatever else left below*/
+/*====================================================================================================================*/
+/* DATE PICKER STYLING */
+/*====================================================================================================================*/
+
+/*PICKER BODY BACKGROUND COLOR*/
+.picker__date-display {
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 2%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+/*PICKER HEAD BACKGROUNG COLOR*/
+.picker__weekday-display {
+    background-color: #eceff1;
+    color: black;
+}
+
+/*Picker Today and Close botton color*/
+.picker__close, .picker__today {
+    color: #0078d2;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    background-color: #0078d2;
+}
+
+/*Picker actual date color*/
+.picker__day.picker__day--today {
+    color: #0078d2;
+}
+
+/*Picker date month change arrow*/
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    background-color: #eceff1;
+}
+
+
+@media screen and (max-width: 480px) {
+    .row .col.s12 {
+        margin:0;
+        padding:5px;
+    }
+
+    #page-footer-container {
+        margin-top:10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
