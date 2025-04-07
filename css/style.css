@@ -93,10 +93,27 @@ a:hover {
 #offers-general a{
     font-size: 12px !important;
 }
-@media screen and (min-width: 480px) {
+#offers-today, #offers-general, #page-footer-container{
+    width: 90% !important;
+    margin: auto;
+}
+#offers-general{
+    margin-top: 10% !important;
+}
+#page-footer-container .container .row div{
+    width: 33.330% !important;
+}
+#page-footer-container .container .row div li{
+    margin: 2%;
+}
+.card.small{
+    height: 100% !important;
+}
+@media screen and (min-width: 767px) {
+   
     .input-feilds{
         width: 100% !important;
-        margin-top: -320px;
+        margin-top: -275px;
         z-index: 77;
     }
     .search-container{
@@ -252,9 +269,27 @@ form {
 .tabs .tab a, .tabs .tab a.active {
     font-size:11px;
 }
-
+@media screen and (max-width: 768px) {
+.slider .slides li img{
+    width: 100% !important;
+    height: 50% !important;
+    margin-left: 0% !important;
+   
+}
+.carousel-container-row , .carousel-container{
+    width: 100% !important;
+    height: 250px !important;
+}
+.input-feilds{
+    margin-top: 100px !important;
+}
+#round_trip .row  , #one_way .row , #rtrip_and_hotel .row {
+    display: grid !important;
+    grid-template-columns: auto auto !important;
+}
+}
 /* right form header media */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
     .tabs .tab a, .tabs .tab a.active {
         font-size:16px;
     }
@@ -267,7 +302,6 @@ form {
         right: 0 !important;
         bottom: 0 !important;
     }
-    
 }
 
 
